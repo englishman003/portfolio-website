@@ -72,10 +72,17 @@ input, select, textarea {
 	appearance: none;
 }
 
+input:focus, select:focus, textarea:focus{
+	outline: 2px solid #FFD700;
+}
+
+
+
 /* Basic */
 
 	html {
 		box-sizing: border-box;
+		font-size: 62.5%;
 	}
 
 	*, *:before, *:after {
@@ -1643,6 +1650,12 @@ input, select, textarea {
 			margin: 0 0 2em 0;
 		}
 
+		.image.featured img{
+			position: relative;
+			height: 26.9rem;
+			width: 38.3rem;
+		}
+
 		.image.left {
 			float: left;
 			margin: 0 2em 2em 0;
@@ -1686,7 +1699,7 @@ input, select, textarea {
 		text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
 		overflow: hidden;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
-		background-color: #43B3E0;
+		background-color: #0047AB;;
 		padding: 1em 2.35em 1em 2.35em;
 		font-size: 1.1em;
 		max-width: 24em;
@@ -1697,7 +1710,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #43bff0;
+			background-color: #3C87FA;
 			color: #fff !important;
 		}
 
@@ -1915,6 +1928,7 @@ input, select, textarea {
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		text-align: center;
 		padding: 2em;
+		background-color: #DEDEDE;
 	}
 
 		.box.style1 {
@@ -1924,9 +1938,17 @@ input, select, textarea {
 			.box.style1 h3 {
 				margin-bottom: 0.5em;
 			}
+		
+			.box.style1 p{
+				color: #333333;
+			}
 
 		.box.style2 h3 {
 			margin-bottom: 0.25em;
+		}
+
+		.box.style2 p{
+			color: #333333;
 		}
 
 		.box.style2 .image {
@@ -1974,7 +1996,7 @@ input, select, textarea {
 		}
 
 		.icon.featured {
-			color: #EA8A95;
+			color: #0047AB;
 			display: block;
 			margin: 0 0 1.5em 0;
 			cursor: default;
@@ -2046,6 +2068,7 @@ input, select, textarea {
 		cursor: default;
 		height: 3.5em;
 		line-height: 3.5em;
+		border-bottom: .2rem ridge #FFD700;
 	}
 
 		#nav ul {
@@ -2078,8 +2101,8 @@ input, select, textarea {
 		}
 
 			#nav a:hover {
-				color: #fff !important;
-				background: #383838;
+				color: #333 !important;
+				background: #FFD700;
 			}
 
 			#nav a.active {
